@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Homepage = () => {
@@ -8,12 +9,12 @@ const Homepage = () => {
         <div className="flex font-thin text-3xl">Connecting Food</div>
       </div>
       <div className="flex items-center gap-4">
-        <button className="border rounded-md px-4 py-2 bg-gray-200 text-black">
+      <Link href="/login"><button className="border rounded-md px-4 py-2 bg-gray-200 text-black">
           Login
-        </button>
-        <button className="border rounded-md px-4 py-2 bg-black text-white">
+        </button></Link>
+        <Link href="/signup"><button className="border rounded-md px-4 py-2 bg-black text-white">
           Signup
-        </button>
+        </button></Link>
       </div>
     </div>
   );
